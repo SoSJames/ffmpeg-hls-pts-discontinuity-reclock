@@ -23,7 +23,6 @@ env:
   HAVE_CLEANUP_PAT: ${{ secrets.CLEANUP_PAT != '' }}
 
 jobs:
-  
   build_base:
     name: Build base image
     if: ${{ github.event.inputs.buildOnly != 'true' }}
